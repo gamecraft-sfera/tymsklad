@@ -1,3 +1,10 @@
-[gd_scene load_steps=0 format=3 uid="uid://5wlihmvin01f"]
+[gd_scene load_steps=2 format=3 uid="uid://5wlihmvin01f"]
+
+[ext_resource type="Texture2D" uid="uid://bwum86jx2jyi7" path="res://vlkbez.png" id="1_37kl0"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Vlkbez" type="Sprite2D" parent="."]
+position = Vector2(414.00003, 244)
+scale = Vector2(0.06774194, 0.06774192)
+texture = ExtResource("1_37kl0")
