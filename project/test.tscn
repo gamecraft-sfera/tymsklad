@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://5wlihmvin01f"]
+[gd_scene load_steps=3 format=3 uid="uid://nj2u6lh57wng"]
 
 [ext_resource type="Texture2D" uid="uid://bwum86jx2jyi7" path="res://vlkbez.png" id="1_37kl0"]
+[ext_resource type="Texture2D" uid="uid://l1yoay00laf8" path="res://Snímek obrazovky 2025-11-18 174552.png" id="2_8uh7m"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Vlkbez" type="Sprite2D" parent="."]
-position = Vector2(414.00003, 244)
-scale = Vector2(0.06774194, 0.06774192)
+position = Vector2(717, 606.09033)
+scale = Vector2(0.31209674, 0.27417883)
 texture = ExtResource("1_37kl0")
+
+[node name="SnímekObrazovky20251118174552" type="Sprite2D" parent="."]
+position = Vector2(-122.75, 861.25)
+scale = Vector2(2.694872, 2.8169398)
+texture = ExtResource("2_8uh7m")
