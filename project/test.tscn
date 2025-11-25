@@ -1,15 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://5wlihmvin01f"]
+[gd_scene load_steps=6 format=3 uid="uid://nj2u6lh57wng"]
 
 [ext_resource type="Texture2D" uid="uid://bwum86jx2jyi7" path="res://vlkbez.png" id="1_37kl0"]
-[ext_resource type="Texture2D" uid="uid://i4hhltuev84u" path="res://Snímek obrazovky 2025-09-30 174449.png" id="2_8uh7m"]
+[ext_resource type="Texture2D" uid="uid://l1yoay00laf8" path="res://Snímek obrazovky 2025-11-18 174552.png" id="2_8uh7m"]
+[ext_resource type="Texture2D" uid="uid://b36icnpl7tr43" path="res://Snímek obrazovky 2025-11-18 113434.png" id="3_ppyta"]
+[ext_resource type="Texture2D" uid="uid://bq4obn8d5uq35" path="res://Snímek obrazovky 2025-10-07 093750.png" id="4_ykrsh"]
+[ext_resource type="Texture2D" uid="uid://ddx5b7nvrh308" path="res://Snímek obrazovky 2025-11-18 113419.png" id="5_ykrsh"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Vlkbez" type="Sprite2D" parent="."]
-position = Vector2(414.00003, 244)
-scale = Vector2(0.06774194, 0.06774192)
+position = Vector2(717, 606.09033)
+scale = Vector2(0.31209674, 0.27417883)
 texture = ExtResource("1_37kl0")
 
-[node name="SnímekObrazovky20250930174449" type="Sprite2D" parent="."]
-position = Vector2(882, 402)
+[node name="SnímekObrazovky20251118174552" type="Sprite2D" parent="."]
+position = Vector2(-122.75, 861.25)
+scale = Vector2(2.694872, 2.8169398)
 texture = ExtResource("2_8uh7m")
+
+[node name="SnímekObrazovky20251118113434" type="Sprite2D" parent="."]
+position = Vector2(198, 181)
+texture = ExtResource("3_ppyta")
+
+[node name="SnímekObrazovky20251007093750" type="Sprite2D" parent="."]
+position = Vector2(1254, -116)
+texture = ExtResource("4_ykrsh")
+
+[node name="SnímekObrazovky20251118113419" type="Sprite2D" parent="."]
+position = Vector2(1693.25, 848.75)
+scale = Vector2(1.5544, 2.2277937)
+texture = ExtResource("5_ykrsh")
