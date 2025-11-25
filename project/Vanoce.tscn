@@ -1,3 +1,39 @@
-[gd_scene format=3 uid="uid://lypir3qlpkoh"]
+[gd_scene load_steps=3 format=3 uid="uid://lypir3qlpkoh"]
+
+[ext_resource type="Texture2D" uid="uid://cojw3im4x5x5e" path="res://prvni_scena_vanocni_strom.png" id="1_ka4ul"]
+
+[sub_resource type="SystemFont" id="SystemFont_1cr5q"]
 
 [node name="Vanoce" type="Node2D"]
+
+[node name="PrvniScenaVanocniStrom" type="Sprite2D" parent="."]
+position = Vector2(582, 321)
+scale = Vector2(2.6113636, 2.179661)
+texture = ExtResource("1_ka4ul")
+
+[node name="Uvodni_text" type="Label" parent="PrvniScenaVanocniStrom"]
+offset_left = -211.00089
+offset_top = -144.0591
+offset_right = 37.91127
+offset_bottom = -45.878685
+theme_override_colors/font_color = Color(0.12794566, 0.12946752, 0.5015711, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0.9098039, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0.91764706, 1)
+theme_override_constants/line_spacing = -1
+theme_override_constants/shadow_offset_x = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = SubResource("SystemFont_1cr5q")
+text = "Vítej v kouzelném lese. Pokud si chceš užít skvělou hru v perfektně provedené grafice, klikni ZDE"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 2
+uppercase = true
+structured_text_bidi_override = 3
+
+[node name="KLIK" type="Label" parent="PrvniScenaVanocniStrom"]
+offset_right = 40.0
+offset_bottom = 23.0
