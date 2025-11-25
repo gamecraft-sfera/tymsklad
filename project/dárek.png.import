@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq4obn8d5uq35"
-path="res://.godot/imported/Snímek obrazovky 2025-10-07 093750.png-f557e1b2c4bde16a61387926d3c63f07.ctex"
+uid="uid://tx61so40slk6"
+path="res://.godot/imported/dárek.png-08b037ca0054d02839e6a8272ede1f0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Snímek obrazovky 2025-10-07 093750.png"
-dest_files=["res://.godot/imported/Snímek obrazovky 2025-10-07 093750.png-f557e1b2c4bde16a61387926d3c63f07.ctex"]
+source_file="res://dárek.png"
+dest_files=["res://.godot/imported/dárek.png-08b037ca0054d02839e6a8272ede1f0d.ctex"]
 
 [params]
 
