@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cx07x3xvyhnxq"]
+[gd_scene load_steps=3 format=3 uid="uid://cx07x3xvyhnxq"]
 
 [ext_resource type="Texture2D" uid="uid://tx61so40slk6" path="res://dárek.png" id="1_i06me"]
+[ext_resource type="Texture2D" uid="uid://b0bhpvn5sww7c" path="res://Číča2.png" id="2_3gj7k"]
 
 [node name="Vanoce2" type="Node2D"]
 
@@ -9,3 +10,8 @@ position = Vector2(112.518845, 173.81479)
 rotation = 0.010610742
 scale = Vector2(0.1357485, 0.14053635)
 texture = ExtResource("1_i06me")
+
+[node name="Číča2" type="Sprite2D" parent="."]
+position = Vector2(362.41846, 146.00005)
+scale = Vector2(0.10580477, 0.1395161)
+texture = ExtResource("2_3gj7k")
