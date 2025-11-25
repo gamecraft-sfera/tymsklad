@@ -1,12 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://lypir3qlpkoh"]
 
-[ext_resource type="Texture2D" uid="uid://cojw3im4x5x5e" path="res://prvni_scena_vanocni_strom.png" id="1_ka4ul"]
+[ext_resource type="Texture2D" path="res://prvni_scena_vanocni_strom.png" id="1_ka4ul"]
 [ext_resource type="Texture2D" uid="uid://bwjggmmgwd88" path="res://KLIK_bez_barvy.png" id="2_1cr5q"]
 
 [sub_resource type="SystemFont" id="SystemFont_1cr5q"]
 
 [node name="Vanoce" type="Node2D"]
-visible = false
 
 [node name="PrvniScenaVanocniStrom" type="Sprite2D" parent="."]
 position = Vector2(579, 322)
