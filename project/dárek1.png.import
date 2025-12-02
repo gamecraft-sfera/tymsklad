@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tx61so40slk6"
-path="res://.godot/imported/dárek.png-08b037ca0054d02839e6a8272ede1f0d.ctex"
+uid="uid://ddo45m1p28bmn"
+path="res://.godot/imported/dárek1.png-9e52802ba89417008e0249d060abbdb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dárek.png"
-dest_files=["res://.godot/imported/dárek.png-08b037ca0054d02839e6a8272ede1f0d.ctex"]
+source_file="res://dárek1.png"
+dest_files=["res://.godot/imported/dárek1.png-9e52802ba89417008e0249d060abbdb2.ctex"]
 
 [params]
 
