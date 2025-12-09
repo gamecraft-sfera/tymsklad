@@ -1,66 +1,37 @@
-[gd_scene load_steps=6 format=3 uid="uid://lypir3qlpkoh"]
+[gd_scene load_steps=6 format=3 uid="uid://dup5e2wk0big3"]
 
-[ext_resource type="Script" path="res://vanoce.gd" id="1_tdr0f"]
-[ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="2_ctko8"]
-[ext_resource type="Texture2D" uid="uid://ddo45m1p28bmn" path="res://dárek1.png" id="3_77ncf"]
-[ext_resource type="Texture2D" uid="uid://2afd15eiecwy" path="res://dárek exploze.png" id="4_qnwcm"]
-[ext_resource type="Texture2D" uid="uid://b0bhpvn5sww7c" path="res://Číča2.png" id="5_ctko8"]
+[ext_resource type="Texture2D" path="res://dárek obdelník.png" id="2_la511"]
+[ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="2_ma87n"]
+[ext_resource type="Texture2D" path="res://dárek.png" id="3_6gw31"]
+[ext_resource type="Texture2D" path="res://darek.png" id="4_6gw31"]
+[ext_resource type="Texture2D" path="res://png-clipart-santa-claus-sitting-in-sleigh-black-christmas-pictures-creative-christmas-elk-thumbnail.png" id="5_x8056"]
 
-[node name="Vanoce" type="Node2D"]
-script = ExtResource("1_tdr0f")
+[node name="ChatGptImage2_12_2025165144" type="Sprite2D"]
+position = Vector2(576.00006, 324)
+scale = Vector2(0.7499999, 0.63281256)
+texture = ExtResource("2_ma87n")
 
-[node name="PrvniScenaVanocniStrom" type="Sprite2D" parent="."]
-position = Vector2(579, 322)
-scale = Vector2(2.6113636, 2.179661)
+[node name="DárekObdelník" type="Sprite2D" parent="."]
+position = Vector2(117.333336, 241.77768)
+scale = Vector2(0.5573475, 0.5573475)
+texture = ExtResource("2_la511")
 
-[node name="ChatGptImage2_12_2025165144" type="Sprite2D" parent="."]
-position = Vector2(576.9691, 324.59375)
-scale = Vector2(0.75134236, 0.6316529)
-texture = ExtResource("2_ctko8")
+[node name="Dárek" type="Sprite2D" parent="."]
+position = Vector2(-132, 265.48138)
+scale = Vector2(0.06680108, 0.06680108)
+texture = ExtResource("3_6gw31")
 
-[node name="Label" type="Label" parent="ChatGptImage2_12_2025165144"]
-offset_left = 243.60516
-offset_top = -453.7203
-offset_right = 657.531
-offset_bottom = -282.74033
-theme_override_font_sizes/font_size = 49
-text = "Najdi nový dárek 
-a klikni na něj"
-horizontal_alignment = 1
+[node name="Darek" type="Sprite2D" parent="."]
+position = Vector2(-12.000015, 274.9628)
+scale = Vector2(0.34917876, 0.3491787)
+texture = ExtResource("4_6gw31")
 
-[node name="dárek" type="TextureButton" parent="."]
-offset_left = 387.0
-offset_top = 412.0
-offset_right = 725.4796
-offset_bottom = 665.0
-texture_normal = ExtResource("3_77ncf")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="DárekObdelník2" type="Sprite2D" parent="."]
+position = Vector2(-198.66672, 259.1604)
+scale = Vector2(0.28494608, 0.28494608)
+texture = ExtResource("2_la511")
 
-[node name="DárekExploze" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(551.00006, 477.99997)
-scale = Vector2(0.28515625, 0.36889645)
-texture = ExtResource("4_qnwcm")
-
-[node name="měsíc" type="TextureButton" parent="."]
-offset_left = -58.0
-offset_top = 19.0
-offset_right = 328.0
-offset_bottom = 173.0
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="měsíc2" type="TextureButton" parent="."]
-visible = false
-offset_left = -58.0
-offset_top = 19.0
-offset_right = 328.0
-offset_bottom = 173.0
-texture_normal = ExtResource("5_ctko8")
-ignore_texture_size = true
-stretch_mode = 0
-
-[connection signal="pressed" from="dárek" to="." method="_on_texture_button_pressed"]
-[connection signal="button_up" from="měsíc" to="." method="_on_měsíc_button_up"]
-[connection signal="button_up" from="měsíc2" to="." method="_on_měsíc_button_up"]
+[node name="PngClipartSantaClausSittingInSleighBlackChristmasPicturesCreativeChristmasElkThumbnail" type="Sprite2D" parent="."]
+position = Vector2(-570.6669, -371.35797)
+scale = Vector2(0.4975648, 0.44710088)
+texture = ExtResource("5_x8056")
