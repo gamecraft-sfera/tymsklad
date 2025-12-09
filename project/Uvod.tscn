@@ -1,8 +1,49 @@
-[gd_scene load_steps=2 format=3 uid="uid://clkbpkqnsfi1v"]
+[gd_scene load_steps=8 format=3 uid="uid://clkbpkqnsfi1v"]
 
 [ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="1_1cwu6"]
+[ext_resource type="Script" uid="uid://cmgbxkumh25r" path="res://uvod.gd" id="2_6inwh"]
+[ext_resource type="Texture2D" uid="uid://bwjggmmgwd88" path="res://KLIK_bez_barvy.png" id="3_vni6p"]
+
+[sub_resource type="FontVariation" id="FontVariation_1cwu6"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6inwh"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_y26py"]
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_fvma7"]
 
 [node name="ChatGptImage2_12_2025165144" type="Sprite2D"]
-position = Vector2(576.5, 319)
+position = Vector2(577, 320)
 scale = Vector2(0.7376302, 0.61328125)
 texture = ExtResource("1_1cwu6")
+script = ExtResource("2_6inwh")
+
+[node name="Text" type="Label" parent="."]
+offset_left = 168.78377
+offset_top = -492.4331
+offset_right = 724.61786
+offset_bottom = -331.00635
+theme_override_fonts/font = SubResource("FontVariation_1cwu6")
+theme_override_font_sizes/font_size = 46
+text = "Pokud chceš vidět více v super grafice, klikni ZDE"
+autowrap_mode = 2
+
+[node name="KLIK" type="Label" parent="."]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_6inwh")
+use_parent_material = true
+offset_left = 552.44495
+offset_top = -329.3758
+offset_right = 655.47754
+offset_bottom = -208.71336
+
+[node name="KlikBezBarvy" type="TextureButton" parent="."]
+offset_left = 549.0556
+offset_top = -337.52866
+offset_right = 687.33624
+offset_bottom = -225.0191
+texture_normal = SubResource("CanvasTexture_y26py")
+texture_disabled = SubResource("CurveXYZTexture_fvma7")
+texture_focused = ExtResource("3_vni6p")
+
+[connection signal="pressed" from="KlikBezBarvy" to="." method="_on_klik_bez_barvy_pressed"]
