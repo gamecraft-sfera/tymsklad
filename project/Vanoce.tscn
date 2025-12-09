@@ -1,17 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://lypir3qlpkoh"]
+[gd_scene load_steps=7 format=3 uid="uid://lypir3qlpkoh"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="1_ka4ul"]
+=======
+[ext_resource type="Script" path="res://vanoce.gd" id="1_ctko8"]
+[ext_resource type="Texture2D" uid="uid://bwjggmmgwd88" path="res://KLIK_bez_barvy.png" id="2_1cr5q"]
+[ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="3_77ncf"]
+[ext_resource type="Texture2D" uid="uid://ddo45m1p28bmn" path="res://dárek1.png" id="4_qnwcm"]
+[ext_resource type="Texture2D" uid="uid://2afd15eiecwy" path="res://dárek exploze.png" id="5_p1870"]
+>>>>>>> Stashed changes
 
 [sub_resource type="SystemFont" id="SystemFont_1cr5q"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_1cr5q"]
 
 [node name="Vanoce" type="Node2D"]
+script = ExtResource("1_ctko8")
 
 [node name="PrvniScenaVanocniStrom" type="Sprite2D" parent="."]
 position = Vector2(579, 322)
 scale = Vector2(2.6113636, 2.179661)
 
+<<<<<<< Updated upstream
 [node name="Uvodni_text" type="Label" parent="PrvniScenaVanocniStrom"]
 anchors_preset = -1
 anchor_left = -116.521
@@ -23,6 +33,35 @@ offset_top = -134.04822
 offset_right = 150.21994
 offset_bottom = -35.867798
 theme_override_colors/font_color = Color(0.96009845, 0.9683971, 0.9981784, 1)
+=======
+[node name="ChatGptImage2_12_2025165144" type="Sprite2D" parent="."]
+position = Vector2(578, 325.00003)
+scale = Vector2(0.7454427, 0.6230468)
+texture = ExtResource("3_77ncf")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dárek1" type="Sprite2D" parent="."]
+position = Vector2(526, 566)
+scale = Vector2(0.08886719, 0.08886719)
+texture = ExtResource("4_qnwcm")
+
+[node name="DárekExploze" type="Sprite2D" parent="."]
+position = Vector2(700, 714)
+scale = Vector2(0.07519531, 0.07519531)
+texture = ExtResource("5_p1870")
+
+[node name="Uvodni_text" type="Label" parent="."]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+self_modulate = Color(18.892002, 18.892002, 18.892002, 1)
+offset_left = 84.0
+offset_top = 37.0
+offset_right = 411.04752
+offset_bottom = 175.0
+theme_override_colors/font_color = Color(0.12794566, 0.12946752, 0.5015711, 1)
+>>>>>>> Stashed changes
 theme_override_colors/font_shadow_color = Color(0, 0, 0.9098039, 0)
 theme_override_colors/font_outline_color = Color(0.90971833, 0.9402388, 1, 1)
 theme_override_constants/line_spacing = -1
@@ -41,6 +80,7 @@ uppercase = true
 structured_text_bidi_override = 3
 
 [node name="KlikBezBarvy" type="Sprite2D" parent="."]
+<<<<<<< Updated upstream
 position = Vector2(463.44727, 312.4512)
 scale = Vector2(67.10547, 45.09761)
 texture = SubResource("CanvasTexture_1cr5q")
@@ -50,3 +90,8 @@ show_behind_parent = true
 position = Vector2(577.375, 324)
 scale = Vector2(0.7456055, 0.63085926)
 texture = ExtResource("1_ka4ul")
+=======
+position = Vector2(403, 134)
+scale = Vector2(0.11588542, 0.09143521)
+texture = ExtResource("2_1cr5q")
+>>>>>>> Stashed changes
