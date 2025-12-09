@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=6 format=3 uid="uid://qt6ajp02bw21"]
 
 [ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="1_v1g7x"]
@@ -35,3 +36,12 @@ texture = ExtResource("2_ykd7o")
 position = Vector2(-570.6669, -371.35797)
 scale = Vector2(0.4975648, 0.44710088)
 texture = ExtResource("5_x7vds")
+=======
+[gd_scene load_steps=2 format=3 uid="uid://jaevfy8am463"]
+
+[ext_resource type="Texture2D" uid="uid://2afd15eiecwy" path="res://dárek exploze.png" id="1_s4k2i"]
+
+[node name="DárekExploze" type="Sprite2D"]
+position = Vector2(577, 303)
+texture = ExtResource("1_s4k2i")
+>>>>>>> Stashed changes
