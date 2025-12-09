@@ -1,16 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://clkbpkqnsfi1v"]
+[gd_scene load_steps=7 format=3 uid="uid://clkbpkqnsfi1v"]
 
 [ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="1_1cwu6"]
 [ext_resource type="Script" uid="uid://cmgbxkumh25r" path="res://uvod.gd" id="2_6inwh"]
 [ext_resource type="Texture2D" uid="uid://bwjggmmgwd88" path="res://KLIK_bez_barvy.png" id="3_vni6p"]
+[ext_resource type="Texture2D" uid="uid://brb7xnfvxbpbi" path="res://KLIKdalsi4_bez_barvy.png" id="4_y26py"]
 
 [sub_resource type="FontVariation" id="FontVariation_1cwu6"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6inwh"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_y26py"]
-
-[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_fvma7"]
 
 [node name="ChatGptImage2_12_2025165144" type="Sprite2D"]
 position = Vector2(577, 320)
@@ -38,12 +35,15 @@ offset_right = 655.47754
 offset_bottom = -208.71336
 
 [node name="KlikBezBarvy" type="TextureButton" parent="."]
-offset_left = 549.0556
-offset_top = -337.52866
-offset_right = 687.33624
-offset_bottom = -225.0191
-texture_normal = SubResource("CanvasTexture_y26py")
-texture_disabled = SubResource("CurveXYZTexture_fvma7")
-texture_focused = ExtResource("3_vni6p")
+process_priority = 8
+use_parent_material = true
+offset_left = 386.37244
+offset_top = -414.1656
+offset_right = 1018.12537
+offset_bottom = 4.891693
+texture_normal = ExtResource("3_vni6p")
+texture_pressed = ExtResource("4_y26py")
+ignore_texture_size = true
+stretch_mode = 0
 
 [connection signal="pressed" from="KlikBezBarvy" to="." method="_on_klik_bez_barvy_pressed"]

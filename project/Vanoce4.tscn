@@ -1,39 +1,42 @@
-[gd_scene load_steps=6 format=3 uid="uid://lypir3qlpkoh"]
+[gd_scene load_steps=6 format=3 uid="uid://d0xc75evvwkkw"]
 
-[ext_resource type="Script" path="res://vanoce.gd" id="1_tdr0f"]
-[ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="2_ctko8"]
-[ext_resource type="Texture2D" uid="uid://ddo45m1p28bmn" path="res://dárek1.png" id="3_77ncf"]
-[ext_resource type="Texture2D" uid="uid://2afd15eiecwy" path="res://dárek exploze.png" id="4_qnwcm"]
-[ext_resource type="Texture2D" uid="uid://b0bhpvn5sww7c" path="res://Číča2.png" id="5_ctko8"]
+[ext_resource type="Script" uid="uid://cp558b6am6ddd" path="res://vanoce_3.gd" id="1_6d436"]
+[ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="2_q2c87"]
+[ext_resource type="Texture2D" uid="uid://ddo45m1p28bmn" path="res://dárek1.png" id="3_f21tv"]
+[ext_resource type="Texture2D" uid="uid://2afd15eiecwy" path="res://dárek exploze.png" id="4_7ouqs"]
+[ext_resource type="Texture2D" uid="uid://b0bhpvn5sww7c" path="res://Číča2.png" id="5_ptrvc"]
 
-[node name="Vanoce" type="Node2D"]
-script = ExtResource("1_tdr0f")
+[node name="Vanoce3" type="Node2D"]
+script = ExtResource("1_6d436")
 
 [node name="PrvniScenaVanocniStrom" type="Sprite2D" parent="."]
 position = Vector2(579, 322)
 scale = Vector2(2.6113636, 2.179661)
 
 [node name="ChatGptImage2_12_2025165144" type="Sprite2D" parent="."]
-position = Vector2(576.9691, 324.59375)
+position = Vector2(578, 322)
 scale = Vector2(0.75134236, 0.6316529)
-texture = ExtResource("2_ctko8")
+texture = ExtResource("2_q2c87")
 
 [node name="Label" type="Label" parent="ChatGptImage2_12_2025165144"]
-offset_left = 243.60516
-offset_top = -453.7203
-offset_right = 657.531
-offset_bottom = -282.74033
+offset_left = 130.47432
+offset_top = -472.7181
+offset_right = 733.39514
+offset_bottom = -366.64725
 theme_override_font_sizes/font_size = 49
-text = "Najdi nový dárek 
-a klikni na něj"
-horizontal_alignment = 1
+text = "Superrrr, nyní klikni ZDE"
+
+[node name="KLIK3" type="TextureButton" parent="ChatGptImage2_12_2025165144"]
+offset_right = 40.0
+offset_bottom = 40.0
+ignore_texture_size = true
 
 [node name="dárek" type="TextureButton" parent="."]
 offset_left = 387.0
 offset_top = 412.0
 offset_right = 725.4796
 offset_bottom = 665.0
-texture_normal = ExtResource("3_77ncf")
+texture_normal = ExtResource("3_f21tv")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -41,7 +44,7 @@ stretch_mode = 0
 visible = false
 position = Vector2(551.00006, 477.99997)
 scale = Vector2(0.28515625, 0.36889645)
-texture = ExtResource("4_qnwcm")
+texture = ExtResource("4_7ouqs")
 
 [node name="měsíc" type="TextureButton" parent="."]
 offset_left = -58.0
@@ -57,10 +60,11 @@ offset_left = -58.0
 offset_top = 19.0
 offset_right = 328.0
 offset_bottom = 173.0
-texture_normal = ExtResource("5_ctko8")
+texture_normal = ExtResource("5_ptrvc")
 ignore_texture_size = true
 stretch_mode = 0
 
+[connection signal="pressed" from="ChatGptImage2_12_2025165144/KLIK3" to="." method="_on_klik_3_pressed"]
 [connection signal="pressed" from="dárek" to="." method="_on_texture_button_pressed"]
 [connection signal="button_up" from="měsíc" to="." method="_on_měsíc_button_up"]
 [connection signal="button_up" from="měsíc2" to="." method="_on_měsíc_button_up"]
