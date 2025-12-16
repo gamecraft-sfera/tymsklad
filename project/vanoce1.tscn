@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ckvi2yuodqttg"]
 
-[ext_resource type="Script" uid="uid://cp558b6am6ddd" path="res://vanoce_3.gd" id="1_7swn6"]
+[ext_resource type="Script" uid="uid://774pkm56njfu" path="res://vanoce.gd" id="1_7swn6"]
 [ext_resource type="Texture2D" uid="uid://oaw3rci23wa1" path="res://ChatGPT Image 2. 12. 2025 16_51_44.png" id="2_ffy3m"]
 [ext_resource type="Texture2D" uid="uid://bwjggmmgwd88" path="res://KLIK_bez_barvy.png" id="3_fw7ne"]
 [ext_resource type="Texture2D" uid="uid://ddo45m1p28bmn" path="res://dárek1.png" id="4_egidj"]
